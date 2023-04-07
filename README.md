@@ -1,4 +1,4 @@
-# talacha-web
+# TalachApp
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -32,4 +32,9 @@ yarn build
 
 ```sh
 yarn lint
+```
+### Compile and Run Test
+
+```sh
+yarn test
 ```
