@@ -1,5 +1,6 @@
 <template>
   <main>
-    <h1>Módulo Inicio</h1>
+    <h1>Módulo Productos</h1>
   </main>
 </template>
+

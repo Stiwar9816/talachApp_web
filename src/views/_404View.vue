@@ -1,5 +1,5 @@
 <template>
   <main>
-    <h1>Módulo Inicio</h1>
+    <h1>404 Not Found</h1>
   </main>
 </template>
