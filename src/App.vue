@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <template v-slot:navbar>
-      <navbar />
+      <navbar/>
     </template>
 
     <template v-slot:asideMenu>
@@ -11,7 +11,9 @@
     <!-- Children  -->
     <template v-slot:default>
       <div class="p-5 mt-16 sm:ml-64">
-        <RouterView />
+        <Transition name="slide-fade">
+          <RouterView />
+        </Transition>
       </div>
     </template>
     <!-- Children -->
@@ -36,3 +38,4 @@ export default {
   }
 }
 </script>
+

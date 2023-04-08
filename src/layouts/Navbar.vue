@@ -31,57 +31,59 @@
             alt="TalachApp Logo"
           />
         </div>
-        <div class="flex items-center">
-          <div class="flex items-center ml-3">
-            <div>
-              <button
-                type="button"
-                class="flex text-sm bg-black-800 rounded-full focus:ring-2 focus:ring-orange-200 dark:focus:ring-orange-600"
-                aria-expanded="false"
-                data-dropdown-toggle="dropdown-user"
-              >
-                <span class="sr-only">Open user menu</span>
-                <img
-                  class="w-12 h-12 rounded-full"
-                  src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                  alt="user photo"
-                />
-              </button>
-            </div>
-            <div
-              class="z-50 hidden my-4 text-base list-none bg-orange-100 divide-y divide-black-400 rounded shadow dark:bg-black-700 dark:divide-black-600"
-              id="dropdown-user"
-            >
-              <div class="px-4 py-3" role="none">
-                <p class="text-sm text-black-900 dark:text-white" role="none">{{ nameProfile }}</p>
-                <p
-                  class="text-sm font-medium text-black-900 truncate dark:text-black-300"
-                  role="none"
+          <div class="flex items-center">
+            <div class="flex items-center ml-3">
+              <div>
+                <button
+                  type="button"
+                  class="flex text-sm bg-black-800 rounded-full focus:ring-2 focus:ring-orange-200 dark:focus:ring-orange-600"
+                  aria-expanded="false"
+                  data-dropdown-toggle="dropdown-user"
                 >
-                  {{ emailProfile }}
-                </p>
+                  <span class="sr-only">Open user menu</span>
+                  <img
+                    class="w-12 h-12 rounded-full"
+                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                    alt="user photo"
+                  />
+                </button>
               </div>
-              <ul class="py-1" role="none">
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm text-black-700 hover:bg-black-100 dark:text-black-300 dark:hover:bg-black-600 dark:hover:text-white active:bg-orange-300"
-                    role="menuitem"
-                    >Perfil</a
+              <div
+                class="z-50 hidden my-4 text-base list-none px-2 bg-orange-100 divide-y divide-black-500 rounded shadow dark:bg-black-700 dark:divide-black-600"
+                id="dropdown-user"
+              >
+                <div class="px-4 py-3" role="none">
+                  <p class="text-sm text-black-900 dark:text-white" role="none">
+                    {{ nameProfile }}
+                  </p>
+                  <p
+                    class="text-sm font-medium text-black-900 truncate dark:text-black-300"
+                    role="none"
                   >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm text-black-700 hover:bg-black-100 dark:text-black-300 dark:hover:bg-black-600 dark:hover:text-white active:bg-orange-300"
-                    role="menuitem"
-                    >Cerrar Sesión</a
-                  >
-                </li>
-              </ul>
+                    {{ roleProfile }}
+                  </p>
+                </div>
+                <ul class="py-1" role="none">
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-black-700 hover:bg-black-100 dark:text-black-300 dark:hover:bg-black-600 dark:hover:text-white active:bg-orange-300"
+                      role="menuitem"
+                      >Perfil</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-black-700 hover:bg-black-100 dark:text-black-300 dark:hover:bg-black-600 dark:hover:text-white active:bg-orange-300"
+                      role="menuitem"
+                      >Cerrar Sesión</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </nav>
@@ -94,9 +96,9 @@ export default {
       type: String,
       default: 'Jhon Doe'
     },
-    emailProfile: {
+    roleProfile: {
       type: String,
-      default: 'jhondoe@talachapp.com'
+      default: 'Administrador'
     }
   }
 }

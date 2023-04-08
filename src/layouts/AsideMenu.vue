@@ -9,7 +9,6 @@
         <li>
           <router-link
             to="/"
-            replace
             class="flex items-center p-2 text-black-900 rounded-lg dark:text-white hover:bg-black-100 dark:hover:bg-black-700 active:bg-orange-300"
           >
             <!-- Icon Home -->
@@ -48,7 +47,7 @@
             <li>
               <router-link
                 to="services"
-                replace
+  
                 class="flex items-center w-full p-2 text-black-900 transition duration-75 rounded-lg pl-11 group hover:bg-black-100 dark:text-white dark:hover:bg-black-700 active:bg-orange-300"
               >
                 <!-- Icon Service -->
@@ -60,7 +59,7 @@
             <li>
               <router-link
                 to="fixed-costs"
-                replace
+  
                 class="flex items-center w-full p-2 text-black-900 transition duration-75 rounded-lg pl-11 group hover:bg-black-100 dark:text-white dark:hover:bg-black-700 active:bg-orange-300"
               >
                 <!-- Icon Dollar -->
@@ -74,7 +73,6 @@
         <li>
           <router-link
             to="inventory"
-            replace
             class="flex items-center p-2 text-black-900 rounded-lg dark:text-white hover:bg-black-100 dark:hover:bg-black-700 active:bg-orange-300"
           >
             <!-- Icon Cube -->
@@ -86,7 +84,6 @@
         <li>
           <router-link
             to="orders"
-            replace
             class="flex items-center p-2 text-black-900 rounded-lg dark:text-white hover:bg-black-100 dark:hover:bg-black-700 active:bg-orange-300"
           >
             <!-- Icon ListBullet -->
@@ -98,7 +95,6 @@
         <li>
           <router-link
             to="payments"
-            replace
             class="flex items-center p-2 text-black-900 rounded-lg dark:text-white hover:bg-black-100 dark:hover:bg-black-700 active:bg-orange-300"
           >
             <!-- Icon Payment -->
@@ -110,7 +106,6 @@
         <li>
           <router-link
             to="users"
-            replace
             class="flex items-center p-2 text-black-900 rounded-lg dark:text-white hover:bg-black-100 dark:hover:bg-black-700 active:bg-orange-300"
           >
             <!-- Icon UserGroups -->
@@ -122,7 +117,6 @@
         <li>
           <router-link
             to="ratings"
-            replace
             class="flex items-center p-2 text-black-900 rounded-lg dark:text-white hover:bg-black-100 dark:hover:bg-black-700 active:bg-orange-300"
           >
             <!-- Icon Star -->
