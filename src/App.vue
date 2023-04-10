@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <template v-slot:navbar>
-      <navbar/>
+      <navbar />
     </template>
 
     <template v-slot:asideMenu>
@@ -24,18 +24,9 @@
   </Layout>
 </template>
 
-<script>
+<script setup>
 import Layout from '@/layouts/LayoutApp.vue'
 import Navbar from '@/layouts/Navbar.vue'
 import AsideMenu from '@/layouts/AsideMenu.vue'
 import AppFooter from '@/layouts/Footer.vue'
-export default {
-  components: {
-    Layout,
-    Navbar,
-    AsideMenu,
-    AppFooter
-  }
-}
 </script>
-
