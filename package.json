@@ -17,6 +17,7 @@
     "autoprefixer": "^10.4.14",
     "firebase": "^9.19.1",
     "flowbite": "^1.6.4",
+    "flowbite-vue": "^0.0.10",
     "jest": "^29.5.0",
     "pinia": "^2.0.32",
     "ts-jest": "^29.1.0",

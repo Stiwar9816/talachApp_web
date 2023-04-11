@@ -11,9 +11,7 @@
     <!-- Children  -->
     <template v-slot:default>
       <div class="p-5 mt-16 sm:ml-64">
-        <Transition name="slide-fade">
-          <RouterView />
-        </Transition>
+        <RouterView />
       </div>
     </template>
     <!-- Children -->

@@ -2,6 +2,7 @@
   <!-- Main modal -->
   <div
     id="add-modal"
+    hide
     tabindex="-1"
     aria-hidden="true"
     class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full"
@@ -11,6 +12,7 @@
       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
         <button
           type="button"
+          id="closeModal"
           class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
           data-modal-hide="add-modal"
         >
@@ -20,8 +22,8 @@
           <span class="sr-only">Close modal</span>
         </button>
         <div class="px-6 py-6 lg:px-8">
-          <h3 class="mb-6 text-xl font-medium text-gray-800 dark:text-white">Agregar {{ text }}</h3>
-          <form class="space-y-6" @submit.prevent="storeProduct.addProduct">
+          <h3 class="mb-6 text-xl font-medium text-gray-800 dark:text-white">{{ textTitle }}</h3>
+          <form class="space-y-6" @submit.prevent="onHandleSubmit">
             <div>
               <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >Nombre</label
@@ -57,7 +59,7 @@
               type="submit"
               class="w-full text-white bg-orange-500 hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-orange-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-300 dark:hover:bg-orange-300 dark:focus:ring-orange-400"
             >
-              Agregar
+              {{ textButton }}
             </button>
           </form>
         </div>
@@ -73,10 +75,15 @@ import { useProductStore } from '@/stores/products'
 import { XMarkIcon } from '@heroicons/vue/24/outline'
 
 const props = defineProps({
-  text: {
+  textTitle: {
     type: String,
     default: 'No Name'
-  }
+  },
+  textButton: {
+    type: String,
+    default: 'No Name'
+  },
+  onHandleSubmit: Function
 })
 // Initialization store
 const storeProduct = useProductStore()

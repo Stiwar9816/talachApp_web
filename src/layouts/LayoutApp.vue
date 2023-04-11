@@ -1,8 +1,8 @@
 <template>
   <!-- Navbar -->
-  <navbar>
+  <nav>
     <slot name="navbar"></slot>
-  </navbar>
+  </nav>
   <!-- Navbar -->
 
   <!-- Aside Menu -->
@@ -10,7 +10,7 @@
     <slot name="asideMenu"></slot>
   </aside>
   <!-- Aside Menu -->
-  
+
   <!-- Children -->
   <main>
     <slot> </slot>
